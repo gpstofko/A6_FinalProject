@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 #imports and formats the data
 data = pd.read_csv("A6_FinalProject/DatasetAfricaMalaria_2017.csv")
-x = data[["miles(000)","age"]].values
+x = data[["Urban population (% of total population)	","Rural population (% of total population)","People using at least basic sanitation services (% of population)"]].values
 y = data["Price"].values
 
 #split the data into training and testing data
