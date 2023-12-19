@@ -17,17 +17,13 @@ model = LinearRegression().fit(xtrain, ytrain)
 coef = np.around(model.coef_, 2)
 intercept = round(float(model.intercept_), 2)
 r_squared = round(model.score(x, y),2)
-print(f"Model's Linear Equation: y={coef[0]}x1 + {coef[1]}x2 + {intercept}") 
+print(f"Model's Linear Equation: y={coef[0]}x1 + {coef[1]}x2 + {coef[2]}x3 {intercept}") 
 print("R Squared value:", r_squared)
 #Loop through the data and print out the predicted prices and the 
 #actual prices
 predict = model.predict(xtest)
 # round the value in the np array to 2 decimal places
 predict = np.around(predict, 2)
-my_prediction=model.predict([[89,10]])
-my_predictio=model.predict([[150,20]])
-print("89k with 10years:"+str(my_prediction))
-print("150k with 20years:"+str(my_predictio))
 avg_percent_error=0.0
 for index in range(len(xtest)):
     actual = ytest[index] # gets the actual y value from the ytest dataset
