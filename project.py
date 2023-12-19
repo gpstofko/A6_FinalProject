@@ -26,15 +26,15 @@ print("R Squared value:", r_squared)
 predict = model.predict(xtest)
 # round the value in the np array to 2 decimal places
 predict = np.around(predict, 2)
-avg_percent_error=0.0
-for index in range(len(xtest)):
-    actual = ytest[index] # gets the actual y value from the ytest dataset
-    predicted_y = predict[index] # gets the predicted y value from the predict variable
+# avg_percent_error=0.0
+# for index in range(len(xtest)):
+    # actual = ytest[index] # gets the actual y value from the ytest dataset
+    # predicted_y = predict[index] # gets the predicted y value from the predict variable
     #x_coord = xtest[index] # gets the x value from the xtest dataset
-    percent_error=abs((predicted_y-actual)/actual)*100
-    avg_percent_error+=percent_error
+    # percent_error=abs((predicted_y-actual)/actual)*100
+    # avg_percent_error+=percent_error
     #print("x value:", float(x_coord), "Predicted y value:", predicted_y, "Actual y value:", actual)
-avg_percent_error=avg_percent_error/(len(xtest))
-print("average percent error:"+str(np.around(avg_percent_error,2))+"%")
+# avg_percent_error=avg_percent_error/(len(xtest))
+# print("average percent error:"+str(np.around(avg_percent_error,2))+"%")
 print("***************")
 print("Testing Results")
