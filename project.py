@@ -4,9 +4,11 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 #imports and formats the data
-data = pd.read_csv("A6_FinalProject/DatasetAfricaMalaria_2017.csv")
+data = pd.read_csv("DatasetAfricaMalaria_2017.csv")
 x = data[["Urban population (% of total population)","Rural population (% of total population)","People using at least basic sanitation services (% of population)"]].values
 y = data["Incidence of malaria (per 1,000 population at risk)"].values
+print(x)
+print(y)
 
 #split the data into training and testing data
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = .2)
@@ -17,7 +19,7 @@ model = LinearRegression().fit(xtrain, ytrain)
 coef = np.around(model.coef_, 2)
 intercept = round(float(model.intercept_), 2)
 r_squared = round(model.score(x, y),2)
-print(f"Model's Linear Equation: y={coef[0]}x1 + {coef[1]}x2 + {coef[2]}x3 {intercept}") 
+print(f"Model's Linear Equation: y={coef[0]}x1 + {coef[1]}x2 + {coef[2]}x3 + {intercept}") 
 print("R Squared value:", r_squared)
 #Loop through the data and print out the predicted prices and the 
 #actual prices
