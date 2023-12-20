@@ -18,6 +18,8 @@ The dataset utilized includes data regarding African countries during the year 2
 
 Determine which algorithm is the best fit. Based on the dataset you choose, you will need to figure out which algorithm to use. This will require you to get to know your data and your goals! Is there a linear correlation between variables? Are you looking for numerical value or a label/category? Do you know the labels or do you need the model to create them for you?
 
+We tried to create and find a correlation between incidence of malaria (per 1000 population at risk) and multiple variables, including People using at least basic sanitation services (% of population), urban population (% of total population) as well as rural population (% of total population). We're looking for a numberical value from multivariable linear regression for the combined variables to correlate rural and urban populations as well as basic sanitation services to incidence of malaria. From the data, our Y value was incidence of malaria (per 1000 population at risk) and our three X-values were People using at least basic sanitation services (% of population), urban population (% of total population),and rural population (% of total population).
+
 Do some tests with matplotlib and visualize your data. Does it provide a good correlation? Why or why not?
 
 Program your model. Once you have chosen your type of model, it’s time to create it! In this step, you will write a program that fits your chosen model to the data. Your program and output will be specific to the model you choose.
