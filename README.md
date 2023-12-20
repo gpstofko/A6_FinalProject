@@ -15,6 +15,9 @@ Tunisia,2017,TUN,,,,,,92.66,,,78.12,,88.29,31.36,0.2,68.64,1.57,96.25,88.71,99.7
 **Reflection Questions:**
 Choose a dataset.
 Determine which algorithm is the best fit. Based on the dataset you choose, you will need to figure out which algorithm to use. This will require you to get to know your data and your goals! Is there a linear correlation between variables? Are you looking for numerical value or a label/category? Do you know the labels or do you need the model to create them for you?
+
 Do some tests with matplotlib and visualize your data. Does it provide a good correlation? Why or why not?
+
 Program your model. Once you have chosen your type of model, it’s time to create it! In this step, you will write a program that fits your chosen model to the data. Your program and output will be specific to the model you choose.
+
 Analyze and present your findings. An important part of creating predictive models is being able to communicate the results. In this final step of the project, you will present your findings using slides or an infographic. Your product should include the following components:
