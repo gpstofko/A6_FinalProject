@@ -23,6 +23,10 @@ We tried to create and find a correlation between incidence of malaria (per 1000
 Do some tests with matplotlib and visualize your data. Does it provide a good correlation? Why or why not?
 There is almost no correlation between the urban population% and instances of malaria as well as little correlation between access to sanitation services and malaria.
 
+  Your reasoning for the algorithm you chose - We chose multi-variable linear regression because this data set is working with multiple variables and the goal of     the program is to test if there is a trend between a handful of social and economic factors and the spread of malaria.
+  An explanation and analysis of the output of your model: What results did your model produce? What do they mean? -The results of our model showed that there was    little correlation between the variables proving that these sanitation and rural vs non-rural.
+  Real world implications - The real world implications of this is that it could help find what living situations lead to higher cases of malaria.
+
 Program your model. Once you have chosen your type of model, it’s time to create it! In this step, you will write a program that fits your chosen model to the data. Your program and output will be specific to the model you choose.
 
 Analyze and present your findings. An important part of creating predictive models is being able to communicate the results. In this final step of the project, you will present your findings using slides or an infographic. Your product should include the following components:
